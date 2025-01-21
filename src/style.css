@@ -1,0 +1,65 @@
+:root {
+  --gray: #545253;
+  --light-gray: #d8d8d8;
+  --orange: #f6931d;
+  --green: #a0bc57;
+  --turquoise: #6eb7c2;
+  --white: #fff;
+  --red: #d50303;
+  --font-base: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-base);
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #ecf8fb, #efefef);
+  animation: backgroundTransition 5s infinite alternate;
+  background-size: 100vw 200vh;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+header {
+  background-color: var(--gray);
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-image: url(./assets/modernize-bg.png);
+  width: 100%;
+  height: calc(100% - 8rem);
+  pointer-events: none;
+}
+
+@keyframes backgroundTransition {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
