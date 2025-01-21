@@ -15,10 +15,10 @@
 
 - [ ] Phone field should have a mask for US phone number: (XXX) XXX-XXXX
 - [ ] The form should be optimized for mobile UX (do your best)
-- [ ] Add form validation:
-  - [ ] "Name" field requires 2 or more chars
-  - [ ] "City" and "State" are optional
-  - [ ] "Phone" field is required and should have validation by mask
-  - [ ] "Email" field is required
-- [ ] If there's an error, the field should change the border color to #D50303
+- [x] Add form validation:
+  - [x] "Name" field requires 2 or more chars
+  - [x] "City" and "State" are optional
+  - [x] "Phone" field is required and should have validation by mask
+  - [x] "Email" field is required
+- [x] If there's an error, the field should change the border color to #D50303
 - [ ] The form should submit data to https://formsws-hilstaging-com-0adj9wt8gzyq.runscope.net/solar via AJAX (ignore any errors)
