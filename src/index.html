@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modernize</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="./assets/modernize-logo.png" alt="Modernize logo" />
+      </picture>
+    </header>
+    <main>
+      <section>
+        <div>
+          <p>Enter to win a 3rd generation Nest</p>
+          <p>Learning Thermostat worth $249.</p>
+        </div>
+        <div>
+          <form id="entryForm" action="">
+            <input type="text" placeholder="Name" minlength="2" required />
+            <div>
+              <input type="text" placeholder="City" />
+              <input type="text" placeholder="State" />
+            </div>
+            <input
+              type="text"
+              id="phoneField"
+              placeholder="Phone Number"
+              maxlength="10"
+              required
+            />
+            <input
+              id="emailField"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <input id="submit" type="submit" value="Enter to win" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
