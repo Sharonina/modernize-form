@@ -29,7 +29,7 @@ body {
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(180deg, #ecf8fb, #efefef);
+  background: linear-gradient(180deg, #178eac, #961414);
   animation: backgroundTransition 5s infinite alternate;
   background-size: 100vw 200vh;
 }
@@ -56,11 +56,11 @@ header {
 main {
   background-image: url(./assets/modernize-bg.png);
   width: 100%;
-  height: calc(100% - 8rem);
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 4.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .form {
@@ -68,6 +68,7 @@ main {
   width: 100%;
   height: auto;
   max-width: 67rem;
+  box-shadow: 0 5px 5px #6eb7c24f;
 }
 
 .form__header {
@@ -147,4 +148,62 @@ main {
   .form__container .form__group .form__state {
     max-width: 18.09rem;
   }
+}
+
+.savings__container {
+  background: transparent;
+  border: 2px solid var(--color-accent);
+  padding: 2rem;
+  margin: 4.2rem auto;
+  max-width: 40.4rem;
+  min-width: 29rem;
+  text-align: center;
+  position: relative;
+}
+
+.savings__title {
+  font-size: 1.5rem;
+  color: var(--color-gray-dark);
+  text-transform: uppercase;
+  font-family: var(--font-family-base);
+  font-weight: 100;
+}
+
+.savings__content {
+  background: var(--color-white);
+  padding: 1.1rem 1.5rem 2.5rem;
+  opacity: 75%;
+  text-align: left;
+}
+
+.savings__label {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.savings__heading {
+  font-size: 2rem;
+  color: var(--color-gray-dark);
+  margin: 0.5rem 0 1.5rem;
+  font-weight: 100;
+}
+
+.savings__description {
+  font-size: 1.4rem;
+  color: var(--color-gray-dark);
+  font-weight: 100;
+}
+
+.savings__link {
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.savings__link:hover {
+  text-decoration: underline;
 }
