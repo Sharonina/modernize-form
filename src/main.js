@@ -1,4 +1,3 @@
-// Formatting Functions
 function formatPhone(value) {
   const digits = value.replace(/\D/g, "");
   const areaCode = digits.slice(0, 3);
@@ -15,7 +14,6 @@ function formatName(value) {
   return value.replace(/[^a-zA-Z\s]/g, "");
 }
 
-// Validation Functions
 function isValidPhone(value) {
   return /^\(\d{3}\) \d{3}-\d{4}$/.test(value);
 }
@@ -28,7 +26,6 @@ function isValidName(value) {
   return /^[a-zA-Z\s]{2,}$/.test(value);
 }
 
-// Core Validation Handler
 function applyValidation(field, validationFn, formatFn = null) {
   field.addEventListener("input", (e) => {
     let value = e.target.value;
@@ -47,7 +44,6 @@ function applyValidation(field, validationFn, formatFn = null) {
   });
 }
 
-// Form Initialization
 function initializeForm() {
   const phoneField = document.querySelector("#phone-field");
   const emailField = document.querySelector("#email-field");
@@ -76,5 +72,4 @@ function initializeForm() {
   });
 }
 
-// Initialize Form
 initializeForm();

@@ -3,64 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Surging energy bills, unpredictable weather patterns and
+    dissatisfaction with utility companies have homeowners
+    scrambling..."
+    />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Modernize</title>
   </head>
   <body>
-    <header>
-      <picture>
-        <img src="./assets/modernize-logo.png" alt="Modernize logo" />
-      </picture>
-    </header>
-    <main>
-      <section class="form">
-        <div class="form__header">
-          <p>Enter to win a 3rd generation Nest</p>
-          <p>Learning Thermostat worth $249.</p>
-        </div>
-        <div class="form__container">
-          <form id="nest-giveaway-form">
-            <input
-              id="name-field"
-              class="form__input"
-              type="text"
-              placeholder="Name"
-              minlength="2"
-              required
-            />
-            <div class="form__group">
-              <input class="form__input" type="text" placeholder="City" />
+    <div class="container">
+      <header>
+        <picture>
+          <img
+            id="modernize-logo"
+            src="./assets/modernize-logo.webp"
+            alt="Modernize logo"
+          />
+        </picture>
+      </header>
+      <main>
+        <section class="form">
+          <div class="form__header">
+            <p>Enter to win a 3rd generation Nest</p>
+            <p>Learning Thermostat worth $249.</p>
+          </div>
+          <div class="form__container">
+            <form id="nest-giveaway-form">
               <input
-                class="form__input form__state"
+                id="name-field"
+                class="form__input"
                 type="text"
-                placeholder="State"
+                placeholder="Name"
+                minlength="2"
+                required
               />
-            </div>
-            <input
-              type="text"
-              id="phone-field"
-              class="form__input"
-              placeholder="Phone Number"
-              maxlength="14"
-              required
-            />
-            <input
-              id="email-field"
-              class="form__input"
-              type="email"
-              placeholder="Email Address"
-              required
-            />
-            <input
-              id="submit-btn"
-              class="form__submit"
-              type="submit"
-              value="Enter to win"
-            />
-          </form>
-        </div>
-      </section>
-    </main>
-    <script src="./main.js"></script>
+              <div class="form__group">
+                <input class="form__input" type="text" placeholder="City" />
+                <input
+                  class="form__input form__state"
+                  type="text"
+                  placeholder="State"
+                />
+              </div>
+              <input
+                type="text"
+                id="phone-field"
+                class="form__input"
+                placeholder="Phone Number"
+                maxlength="14"
+                required
+              />
+              <input
+                id="email-field"
+                class="form__input"
+                type="email"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                id="submit-btn"
+                class="form__submit"
+                type="submit"
+                value="Enter to win"
+              />
+            </form>
+          </div>
+        </section>
+
+        <section class="savings__container">
+          <h2 class="savings__title">Even More Savings</h2>
+          <div class="savings__content">
+            <span class="savings__label">Advertorial</span>
+            <h3 class="savings__heading">
+              Tricks Homeowners Use to Eliminate Bills
+            </h3>
+            <p class="savings__description">
+              Surging energy bills, unpredictable weather patterns and
+              dissatisfaction with utility companies have homeowners
+              scrambling...
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                class="savings__link"
+                >Read More</a
+              >
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./main.js" defer></script>
   </body>
 </html>
